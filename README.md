@@ -74,36 +74,36 @@ le variabili globali o locali:
     globali: una variablie globale puo essere vista da tutta la pozione di codice
     locali: viene creata e dichiarata e uasta solo per una piccola poszione di codice
 esempio: 
-    <html>
-        <body onload = checkscope();>
-            <script type = "text/javascript">
-                var myVar = "global"; // Declare a global variable
-                function checkscope( ) {
-                    var myVar = "local"; // Declare a local variable
-                    document.write(myVar);
-                }
-            </script>
-        </body>
-    </html>
+        <html>
+            <body onload = checkscope();>
+                <script type = "text/javascript">
+                    var myVar = "global"; // Declare a global variable
+                    function checkscope( ) {
+                        var myVar = "local"; // Declare a local variable
+                        document.write(myVar);
+                    }
+                </script>
+            </body>
+        </html>
 
 NON ASSEGNARE NOMI A VARIABILE COME LE PAROLE CHIAVE RISERVATE A JAVASCRIPT 
 
 parole riservate:
-    abstract, else, instanceof, switch
-    boolean, enum, int, synchronized
-    break, export, interface, this
-    byte, extends, long, throw
-    case, false, native, throws
-    catch, final, new, transient
-    char, finally, null, true
-    class, float, package, try
-    const, for, private, typeof
-    continue, function, protected, var
-    debugger, goto, public, void
-    default, if, return, volatile
-    delete, implements, short, while
-    do, import, static, with,
-    double, in, super
+        abstract, else, instanceof, switch
+        boolean, enum, int, synchronized
+        break, export, interface, this
+        byte, extends, long, throw
+        case, false, native, throws
+        catch, final, new, transient
+        char, finally, null, true
+        class, float, package, try
+        const, for, private, typeof
+        continue, function, protected, var
+        debugger, goto, public, void
+        default, if, return, volatile
+        delete, implements, short, while
+        do, import, static, with,
+        double, in, super
 
 
 non puoi iniziare a dichiarare una variabile iniziando con un numero ma puoi usarli mettendo il trattino basso davanti
