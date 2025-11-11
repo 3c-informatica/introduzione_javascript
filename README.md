@@ -89,11 +89,11 @@ le variabili globali o locali:
             </script>
         </body>
     </html>
-*/
+*/```
 NON ASSEGNARE NOMI A VARIABILE COME LE PAROLE CHIAVE RISERVATE A JAVASCRIPT 
 
 ###parole riservate:
-/*
+```/*
     abstract, else, instanceof, switch,
     boolean, enum, int, synchronized,
     break, export, interface, this,
@@ -109,6 +109,6 @@ NON ASSEGNARE NOMI A VARIABILE COME LE PAROLE CHIAVE RISERVATE A JAVASCRIPT
     delete, implements, short, while,
     do, import, static, with,
     double, in, super
-*/
+*/```
 
 non puoi iniziare a dichiarare una variabile iniziando con un numero ma puoi usarli mettendo il trattino basso davanti
