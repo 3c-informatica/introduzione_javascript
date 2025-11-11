@@ -78,17 +78,17 @@ le variabili globali o locali:
     locali: viene creata e dichiarata e uasta solo per una piccola poszione di codice
 ###esempio codice in javascript: 
 /*
-*    <html>
-*       <body onload = checkscope();>
-*            <script type = "text/javascript">
-*                var myVar = "global"; // Declare a global variable
-*                function checkscope( ) {
-*                    var myVar = "local"; // Declare a local variable
-*                    document.write(myVar);
-*                }
-*            </script>
-*        </body>
-*    </html>
+    <html>
+       <body onload = checkscope();>
+            <script type = "text/javascript">
+                var myVar = "global"; // Declare a global variable
+                function checkscope( ) {
+                    var myVar = "local"; // Declare a local variable
+                    document.write(myVar);
+                }
+            </script>
+        </body>
+    </html>
 */
 NON ASSEGNARE NOMI A VARIABILE COME LE PAROLE CHIAVE RISERVATE A JAVASCRIPT 
 
