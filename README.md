@@ -76,7 +76,7 @@ gestice i numeri con il metodo IEE 754 a virgola mobile
 le variabili globali o locali: 
     globali: una variablie globale puo essere vista da tutta la pozione di codice
     locali: viene creata e dichiarata e uasta solo per una piccola poszione di codice
-###esempio codice in javascript: 
+```esempio codice in javascript: 
 /*
     <html>
        <body onload = checkscope();>
