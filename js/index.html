@@ -1,12 +1,26 @@
-<html>
-    <head>
-        <script type="text/javascript" src="file.js"></script>
-    </head>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatore di porta</title>
+</head>
+<body>
+    <h1>benvenuto nel tuo primo programma in javascript</h1>
+    
+    <script>
+        let numero1 =prompt("inserisci il primo nuemero: ");
+        let nuemro2 = prompt("inserisci il secondo numero: ");
 
-    <body>
-        <script type="text/javascript">
-            document.write("hello world");
-        </script>
-        <input type="button" onclick="sayHello" value="sayHello">
-    </body>
+        numero1 = Number(nuemro1);
+        nuemro2 = Number(nuemro2);
+
+        let somma = numero1 + nuemro2;
+
+        alert("la somma dei numeri è " + somma);
+        
+        console.log("hai inserito il numero: " + nuemro1 + "e" + nuemro2);
+        console.log("la loro somma è: "+somma);
+    </script>
+</body>
 </html>
