@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>confronto tra due numeri</title>
+    </head>
+    <body>
+        <h1>chi e più grande?</h1>
+        <script>
+            let number1 = Number(prompt("insersci il primo numero: "));
+            let number2 = Number(prompt("inserisci il secondo numero: "));
+            /*
+            number2 = Number(number2); // equivale al convert.toint32 su c#
+            number1 = Number(number1);
+            */
+            if(number1 > number2){
+                alert("il primo numero " + number1+" inserito è più grande del secondo " + number2);
+            }else if(number1 == number2){
+                alert("i due numeri inseriti sono uguali");
+            }else{
+                alert("il secondo numero " + number2 + " inserito è più grande del primo " + number1);
+            }
+
+            console.log("numero 1: " + number1);
+            console.log("numero 2: " + number2);
+        </script>
+        
+    </body>
+</html>
