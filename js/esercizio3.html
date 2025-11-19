@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Esercizio 3</title>
+</head>
+<body>
+    <h1>verifica dell'acesso</h1>
+    <script>
+        let nome = prompt("inserici il tuo nome");
+        let password = prompt("inserci la tua password");
+
+        const nomeCoretto =  "Admin";
+        const passwordCorreotto = "1234";
+
+        if(nome === nomeCoretto && password === passwordCorreotto) {
+            alert("accesso consentito, benvnuto, " + nome +".");
+        }else if (nome === passwordCorreotto || password === passwordCorreotto) {
+            alert("solo una delle credenziali e corretta, riprova");
+        }else{
+            alert("accesso negato, nome utente e password e errati, riprova");
+        }
+
+        let haAcesso = (nome === nomeCoretto && password === passwordCorreotto);
+        console.log("hai acesso: ", haAcesso);
+        console.log("non hai acesso: ", !haAcesso);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tabellina con JavaScript</title>
+    </head>
+    <body>
+        <h1>Generatore di tabelline</h1>
+
+        <script>
+            let numero = Number(prompt("Inserisci il numero di cui vuoi la tabellina"));
+
+            if (isNaN(numero)) {
+                alert("Devi inserire un numero valido!");
+            } else {
+                let risultato = "";
+
+                for (let i = 1; i <= 10; i++) {
+                    risultato += numero + " * " + i + " = " + (numero * i) + "\n";
+                }
+
+                alert("La tabellina del numero " + numero + " è:\n\n" + risultato);
+
+                console.log("Tabellina del numero " + numero + ":\n");
+                console.log(risultato);
+            }
+        </script>
+    </body>
+</html>
