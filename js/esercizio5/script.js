@@ -1,0 +1,41 @@
+//cosi si crea un array in javascript
+let frutti = ["mela", "banana", "pera"];
+console.log("Frutti iniziali:", frutti);
+
+//aggiunge un nuovo elemento alla fine dell'array
+frutti.push("Kiwi");
+console.log("Dopo il push di ('Kiwi'): ", frutti);
+
+//aggiunge un nuovo elemento all'inizio dell'array
+frutti.unshift("fragola");
+console.log("Dopo l'unshift di ('fragola'): ", frutti); 
+
+//rimuove l'ultimo elemento dell'array
+let ultimo = frutti.pop();
+console.log("dopo il pop(): ", frutti, "-> rimosso: ", ultimo);
+
+//rimuove il primo elemento dell'array
+let primo = frutti.shift();
+console.log("dopo lo shift(): ", frutti, "-> rimosso: ", primo);
+
+//mette in ordine crescente o alfabetico gli elementi dell'array
+frutti.sort();
+console.log("dopo lo sort(): ", frutti);
+
+//inverte l'ordine degli elementi dell'array
+frutti.reverse();
+console.log("dopo il reverse(): ", frutti);
+
+// creiamo un altro array dei frutti
+let altrifrutti = ["arancia", "uva"];
+
+//unisce due array in uno solo
+let tuttiFrutti = frutti.concat(altrifrutti);
+console.log("dopo il concat(): ", tuttiFrutti);
+
+//convertire l'array in una stringa
+let stringaFrutti = tuttiFrutti.join(", ");
+console.log("lista come stringa: ", stringaFrutti);
+
+//mostra la stringa in un alert
+alert("Lista finale dei frutti: " + stringaFrutti);

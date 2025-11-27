@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="it">
-    <head>
-        <meta charset="UTF-8">
-        <title>Tabellina con JavaScript</title>
-    </head>
-    <body>
-        <h1>Generatore di tabelline</h1>
-
-        <script>
             let numero = Number(prompt("Inserisci il numero di cui vuoi la tabellina"));
 
             if (isNaN(numero)) {
@@ -24,6 +14,3 @@
                 console.log("Tabellina del numero " + numero + ":\n");
                 console.log(risultato);
             }
-        </script>
-    </body>
-</html>
