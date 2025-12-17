@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ù, initial-scale=1.0">
+    <title>Esercizio DOM - Selezione e modifica</title>
+    <link rel="stylesheet" href="../esercizio 6/style.css">
+</head>
+<body>
+    <h1 id="titolo">Esercitazione sul Document Object Model</h1>
+    
+    <p name ="descrizione">Questa pagina mostra come Javascript puo integrare con il documento HTML.</p>
+    <p name = "descrizione"> Ogni paragrafo puo essere modificato tramite DOM</p>
+
+    <button id="infoBtn">mostra informazioni documento</button>
+    <button id="btnModifica">Modificia contenuti</button>
+    <button id="btnConta">conta i paragrafi</button>
+
+    <script>
+        const corpo = document.body; //riferimento a body
+        const radice = document.documentElement; // driferimento html
+        const finestra = document.defaultView; //Oggetto window associato al documento
+        const implementazione = document.implementation; //oggetto Dom implementation 
+
+        document.getElementById("infoBtn").addEventListener("click", function()
+            {
+                const titolo = document.getElementById("titolo");
+                titolo.innerText = "informazioni sul documento: ";
+
+                //mostra i dettagli della pagina 
+                let info = document.createElement("p");
+                info.innerText = 
+                    "Titolo: " + document.title + "\n" +
+                    "Elemento radice: " + radice.nodeName + "\n" +
+                    "Body: " + corpo.nodeName + "\n" +
+                    "finestra predefinita: " + finestra + "\n"+
+                    "implementazione DOM: " + implementazione;
+                corpo.appendChild(info);
+
+            }
+        );
+
+        document.getElementById("btnModifica").addEventListener("click", function()
+            {
+                const titolo = document.getElementById("titolo");
+                titolo.innerHTML = " <em>Titolo aggironato dinamicamente con innerHTML</em>";
+
+                const paragrafi = document.getElementsByTagName("p");
+                for(let i = 0; i< paragrafi.length; i++)
+                {
+                    paragrafi[i].innerText = "questo e il paragrafo numero " + (i+1) + " modificato da Javasript.";
+                }
+
+                const descrizioni  = document.getElementsByTagName("p");
+                for(let i = 0; i < descrizioni.length; i++)
+                {
+                    descrizioni[i].innerHTML += " (<strong>selezionato tramite name</strong>)"; 
+                }
+
+                const nuovoParagrafo = document.createElement("p");
+                nuovoParagrafo.innerText = "un nuovo elemento e stato creato dinamicamente nel body.";
+                corpo.appendChild(nuovoParagrafo);//se voglio concatenarlo posso fare anche document.body
+            }
+        );
+
+        document.getElementById("btnConta").addEventListener("click", function()
+            {
+                const paragrafi  = document.getElementsByTagName("p");
+                alert("Numero totale di paragrafi nel documento: " + paragrafi.length.toString());
+
+            }
+        );
+    </script>
+</body>
+</html>
