@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <title>Esercizio Form Completo</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Esercizio Form Completo</title>
+    </head>
+    <body>
 
-<h1>Profilo Utente Completo</h1>
-<p>Compila tutti i campi.</p>
+        <h1>Profilo Utente Completo</h1>
+        <p>Compila tutti i campi.</p>
 
-<form id="form-completo">
+        <form id="complited-form">
 
-    <div>
-        <label>Username:</label>
-        <input type="text" id="input-username" placeholder="Inserisci nome">
-    </div>
-    <br>
+            <div>
+                <label>Username:</label>
+                <input type="text" id="input-username" placeholder="Inserisci nome">
+            </div>
+            <br>
 
-    <div>
-        <label>Città di residenza:</label>
-        <select id="select-citta">
-            <option value="">-- Seleziona --</option>
-            <option value="roma">Roma</option>
-            <option value="milano">Milano</option>
-            <option value="napoli">Napoli</option>
-        </select>
-    </div>
-    <br>
+            <div>
+                <label>Città di residenza:</label>
+                <select id="select-city">
+                    <option value="">-- Seleziona --</option>
+                    <option value="roma">Roma</option>
+                    <option value="milano">Milano</option>
+                    <option value="napoli">Napoli</option>
+                </select>
+            </div>
+            <br>
 
-    <div>
-        <label>Genere:</label>
-        <input type="radio" name="genere" id="radio-uomo" value="Uomo"> <label>Uomo</label>
-        <input type="radio" name="genere" id="radio-donna" value="Donna"> <label>Donna</label>
-        <input type="radio" name="genere" id="radio-altro" value="Altro"> <label>Altro</label>
-    </div>
-    <br>
+            <div>
+                <label>Genere:</label>
+                <input type="radio" name="genere" id="radio-men" value="Uomo"> <label>Uomo</label>
+                <input type="radio" name="genere" id="radio-women" value="Donna"> <label>Donna</label>
+                <input type="radio" name="genere" id="radio-other" value="Altro"> <label>Altro</label>
+            </div>
+            <br>
 
-    <div>
-        <label>Interessi (puoi sceglierne più di uno):</label><br>
-        <input type="checkbox" id="check-sport" value="Sport"> <label>Sport</label><br>
-        <input type="checkbox" id="check-musica" value="Musica"> <label>Musica</label><br>
-        <input type="checkbox" id="check-viaggi" value="Viaggi"> <label>Viaggi</label>
-    </div>
-    <br>
+            <div>
+                <label>Interessi (puoi sceglierne più di uno):</label><br>
+                <input type="checkbox" id="check-sport" value="Sport"> <label>Sport</label><br>
+                <input type="checkbox" id="check-music" value="Musica"> <label>Musica</label><br>
+                <input type="checkbox" id="check-travel" value="Viaggi"> <label>Viaggi</label>
+            </div>
+            <br>
 
-    <button type="submit">Invia Dati</button>
-</form>
+            <button type="submit">Invia Dati</button>
+        </form>
 
-<hr>
-<h3>Riepilogo Dati:</h3>
-<div id="risultato"></div>
+        <hr>
+        <h3>Riepilogo Dati:</h3>
+        <div id="result"></div>
 
-<script src="script.js"></script>
-</body>
+        <script src="esercizio7.js"></script>
+    </body>
 </html>

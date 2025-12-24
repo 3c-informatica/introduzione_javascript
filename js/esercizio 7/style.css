@@ -1,0 +1,137 @@
+/* Reset generale per un aspetto uniforme su tutti i browser */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+/* Stile del contenitore Form */
+#complited-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Spaziatura tra i gruppi di input */
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+/* Stile per input di testo e select */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* Stile per Radio e Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Rende le etichette dei radio/checkbox in linea (non a tutta riga) */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline-block;
+    font-weight: 400;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* Stile del Bottone */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Stile per il Riepilogo Dati */
+#result {
+    margin-top: 20px;
+    padding: 20px 20px 20px 40px; /* Aumentato il padding a sinistra (40px) */
+    background: #e8f4fd;
+    border-left: 5px solid #3498db;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 500px;
+    min-height: 50px;
+    line-height: 1.6; /* Migliora la leggibilità del testo */
+}
+
+/* Se nel JS userai una lista <ul> per i dati */
+#result ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: outside; /* Mantiene i pallini fuori dal testo ma dentro il padding */
+}
+
+#result li {
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+hr {
+    margin: 40px 0 20px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    max-width: 500px;
+}
